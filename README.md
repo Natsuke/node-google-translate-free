@@ -17,7 +17,8 @@ translate({
   text: 'text',
   source: 'es',
   target: 'en'
-}, function(result) {
+}, function (err, result) {
+  if (err) throw err
   console.log(result);
 });
 ```
